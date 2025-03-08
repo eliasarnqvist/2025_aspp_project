@@ -28,7 +28,7 @@ The objective of this project is to read, process, and save list-mode detector d
 
 ## Running ``extract_coincidences.py``
 
-The code can be run through the command ```python3 extract_coincidences.py``. The python file can be edited to change locations of input and output data. Included in this repository is a relatively small (~6 MB) input data file for testing, which my system processes in about 0.1 seconds. I have tried it with a larger (~1.3 GB) file as well, which my system processes in about 10 seconds. The big file is too large to be included in this repository. 
+The code can be run through the command ``python3 extract_coincidences.py``. The python file can be edited to change locations of input and output data. Included in this repository is a relatively small (~6 MB) input data file for testing, which my system processes in about 0.1 seconds. I have tried it with a larger (~1.3 GB) file as well, which my system processes in about 10 seconds. The big file is too large to be included in this repository. 
 
 Two, perhaps, uncommon libraries are needed: ``numba`` and ``uproot``. A just-in-time compiler from ``numba`` is used. It compiles a function when the function is called the first time, greatly speeding up execution for following function calls. Using ``numba``, similar performance to ``cython`` is reached, but I think the ``numba`` code is easier to read and understand, as everything is in one Python file. To read ``.root`` files, ``uproot`` is needed. An alternative is using the official ``pyROOT``, but this is only (easily) useable in Linux. 
 
