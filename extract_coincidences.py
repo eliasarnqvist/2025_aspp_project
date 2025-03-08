@@ -10,7 +10,7 @@ import time
 # =============================================================================
 
 # Properties of the input file
-input_file = "data/big.root"
+input_file = "data/SDataR_co60_600s.root"
 input_tree = "Data_R"
 
 # Big input files have to be read in chunks of specified size
@@ -20,7 +20,7 @@ chunk_size = "100 MB"
 time_difference_max = np.uint64(250 * 1e3)
 
 # Choose how to save the coincident data
-output_file = "output/coincidences_1.root"
+output_file = "output/coincidences_co60_600s.root"
 output_tree = "Data_C"
 
 # Used to filter out flags in input data corresponding to saturation events
